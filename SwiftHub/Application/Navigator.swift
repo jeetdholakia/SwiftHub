@@ -79,7 +79,7 @@ class Navigator {
         case .languages(let viewModel): return LanguagesViewController(viewModel: viewModel, navigator: self)
         case .users(let viewModel): return UsersViewController(viewModel: viewModel, navigator: self)
         case .userDetails(let viewModel): return UserViewController(viewModel: viewModel, navigator: self)
-        case .repositories(let viewModel): return RepositoriesViewController(viewModel: viewModel, navigator: self)
+        case .repositories(let viewModel): return RepositoriesViewController(viewModel: viewModel, navigator: self) 
         case .repositoryDetails(let viewModel): return RepositoryViewController(viewModel: viewModel, navigator: self)
         case .contents(let viewModel): return ContentsViewController(viewModel: viewModel, navigator: self)
         case .source(let viewModel): return SourceViewController(viewModel: viewModel, navigator: self)
